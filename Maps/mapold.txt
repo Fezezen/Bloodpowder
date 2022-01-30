@@ -1,0 +1,27 @@
+# v is the vertex char and the follow numbers are the X coords and the Z coords
+v 7 -7
+v 12 0
+v 7 7
+v -9 6
+v -7 -7
+
+v 9 -14
+v 14 -9
+
+v -15 -8
+v -20 14
+
+v 7 -20
+v 12 -24
+v 17 -18
+v 24 -11
+
+# floor height, ceiling height (two indents) vert indexes (two indents) neighbour indexes (two indents) optional flags
+# each digit is hexidecimal, and each one can set a different flag. 
+# if a digit is 1 then it will turn off the ceiling
+# 0000 nothing
+
+s 0 20		0 1 2 3 4		1 x x 2		0001
+s 5 15		0 5 6 1		x 3 x 0
+s -5 15		7 4 3 8		x 0 x x
+s 5 20		5 9 10 11 12 6		x x x x x 1		0001
