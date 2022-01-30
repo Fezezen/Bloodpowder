@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{53FCB0EA-844A-4801-A647-25B736103932}</ProjectGuid>
+    <RootNamespace>DoomStyleRenderer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>GGJ2022</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\Jaxso\source\repos\Doom-Style Renderer\include;C:\Libraries\SDL2-2.0.14 VisualCPP\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Jaxso\source\repos\Doom-Style Renderer\lib\Debug;C:\Libraries\SDL2-2.0.14 VisualCPP\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\Jaxso\source\repos\Doom-Style Renderer\include;C:\Libraries\SDL2-2.0.14 VisualCPP\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Jaxso\source\repos\Doom-Style Renderer\lib\Release;C:\Libraries\SDL2-2.0.14 VisualCPP\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;box2d.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;box2d.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="Blood.cpp" />
+    <ClCompile Include="Gun.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapLoader.cpp" />
+    <ClCompile Include="MathHeader.cpp" />
+    <ClCompile Include="Gloober.cpp" />
+    <ClCompile Include="Pistol.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="RaycastCallback.cpp" />
+    <ClCompile Include="rng.cpp" />
+    <ClCompile Include="sector.cpp" />
+    <ClCompile Include="TextureHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="Blood.h" />
+    <ClInclude Include="CollisionTypes.h" />
+    <ClInclude Include="Gun.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="MapLoader.h" />
+    <ClInclude Include="MathHeader.h" />
+    <ClInclude Include="Gloober.h" />
+    <ClInclude Include="Pistol.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="RaycastCallback.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="rng.h" />
+    <ClInclude Include="sector.h" />
+    <ClInclude Include="TextureHandler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\ceil.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\floor.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire00.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire01.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire02.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire03.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire04.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack00.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack01.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack02.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack03.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack04.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack05.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack06.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack07.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack10.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack11.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack12.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack13.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack14.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack15.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack16.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack17.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack20.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack21.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack22.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack23.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack24.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack25.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack26.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack27.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death00.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death01.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death02.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death03.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death04.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death05.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death06.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death07.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death10.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death11.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death12.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death13.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death14.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death15.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death16.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death17.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death20.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death21.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death22.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death23.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death24.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death25.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death26.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death27.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle0.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle1.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle2.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle3.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle4.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle5.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle6.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle7.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk00.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk01.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk02.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk03.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk04.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk05.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk06.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk07.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk10.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk11.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk12.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk13.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk14.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk15.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk16.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk17.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk20.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk21.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk22.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk23.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk24.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk25.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk26.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk27.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk30.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk31.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk32.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk33.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk34.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk35.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk36.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk37.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk40.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk41.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk42.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk43.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk44.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk45.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk46.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk47.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk50.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk51.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk52.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk53.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk54.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk55.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk56.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk57.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk60.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk61.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk62.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk63.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk64.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk65.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk66.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk67.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\sky.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Textures\wall.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Maps\map.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

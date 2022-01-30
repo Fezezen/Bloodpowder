@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{58c8f32f-23ce-489e-bbb6-06879b824543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Maps">
+      <UniqueIdentifier>{8bcccbed-2f71-4e8e-8e03-ba99fe14272e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Actors">
+      <UniqueIdentifier>{eaea5c32-7900-4f18-a069-c0193d7f06d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Actors">
+      <UniqueIdentifier>{3bcdfb92-24c0-4a8c-95f6-ffd977cadcf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Guns">
+      <UniqueIdentifier>{fc98125a-3eb9-4d2e-8ea6-ebbdd02d5c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Guns">
+      <UniqueIdentifier>{5389ed46-624f-4906-a097-f496ef921c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Actors\Monsters">
+      <UniqueIdentifier>{09e660a3-318e-4df8-9667-cc1402297886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Actors\Monsters">
+      <UniqueIdentifier>{fce1044e-faca-4c94-918c-47d84f7d9840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures\Gloober">
+      <UniqueIdentifier>{f03ae87a-7fec-4746-bc3c-7fbee5c8b3d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures\Pistol">
+      <UniqueIdentifier>{54effe90-9489-4fdf-953a-6bfbe675ce34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MathHeader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Gun.cpp">
+      <Filter>Source Files\Guns</Filter>
+    </ClCompile>
+    <ClCompile Include="Pistol.cpp">
+      <Filter>Source Files\Guns</Filter>
+    </ClCompile>
+    <ClCompile Include="rng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gloober.cpp">
+      <Filter>Source Files\Actors\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="Blood.cpp">
+      <Filter>Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="RaycastCallback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MathHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Gun.h">
+      <Filter>Header Files\Guns</Filter>
+    </ClInclude>
+    <ClInclude Include="Pistol.h">
+      <Filter>Header Files\Guns</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gloober.h">
+      <Filter>Header Files\Actors\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Blood.h">
+      <Filter>Header Files\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="RaycastCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\wall.bmp">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\ceil.bmp">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\floor.bmp">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\sky.bmp">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle7.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle0.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle1.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle2.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle3.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle4.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle5.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\idle\idle6.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk00.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk01.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk02.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk03.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk04.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk05.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk06.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk07.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk10.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk11.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk12.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk13.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk14.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk15.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk16.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk17.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk20.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk21.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk22.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk23.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk24.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk25.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk26.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk27.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk30.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk31.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk32.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk33.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk34.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk35.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk36.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk37.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk40.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk41.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk42.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk43.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk44.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk45.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk46.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk47.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk50.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk51.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk52.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk53.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk54.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk55.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk56.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk57.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk60.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk61.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk62.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk63.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk64.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk65.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk66.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\walk\walk67.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death00.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death01.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death02.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death03.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death04.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death05.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death06.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death07.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death10.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death11.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death12.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death13.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death14.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death15.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death16.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death17.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death20.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death21.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death22.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death23.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death24.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death25.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death26.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\death\death27.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack00.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack01.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack02.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack03.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack04.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack05.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack06.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack07.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack10.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack11.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack12.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack13.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack14.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack15.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack16.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack17.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack20.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack21.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack22.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack23.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack24.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack25.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack26.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Monsters\Gloober\attack\attack27.bmp">
+      <Filter>Resource Files\Textures\Gloober</Filter>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire00.bmp">
+      <Filter>Resource Files\Textures\Pistol</Filter>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire01.bmp">
+      <Filter>Resource Files\Textures\Pistol</Filter>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire02.bmp">
+      <Filter>Resource Files\Textures\Pistol</Filter>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire03.bmp">
+      <Filter>Resource Files\Textures\Pistol</Filter>
+    </Image>
+    <Image Include="Textures\Guns\Pistol\Fire04.bmp">
+      <Filter>Resource Files\Textures\Pistol</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Maps\map.txt">
+      <Filter>Resource Files\Maps</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
