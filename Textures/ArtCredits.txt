@@ -1,0 +1,3 @@
+Ceiling texture by: https://opengameart.org/content/handpainted-stone-floor-te1xture (CC4)
+Floor: https://opengameart.org/content/tileable-bricks-ground-textures-set-1 (CC0)
+Corpse: https://opengameart.org/content/32x32-corpse (edited to be one tile and BMP format)
